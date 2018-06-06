@@ -1,0 +1,32 @@
+[debug] [2018-06-06T22:20:22.765Z] ----------------------------------------------------------------------
+[debug] [2018-06-06T22:20:22.768Z] Command:       /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase serve
+[debug] [2018-06-06T22:20:22.769Z] CLI Version:   3.18.5
+[debug] [2018-06-06T22:20:22.769Z] Platform:      darwin
+[debug] [2018-06-06T22:20:22.769Z] Node Version:  v7.10.0
+[debug] [2018-06-06T22:20:22.769Z] Time:          Wed Jun 06 2018 18:20:22 GMT-0400 (EDT)
+[debug] [2018-06-06T22:20:22.769Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-06T22:20:22.782Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-06T22:20:22.783Z] > authorizing via signed-in user
+[debug] [2018-06-06T22:20:22.785Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/thalmic-challenge  
+  
+ Wed Jun 06 2018 18:20:22 GMT-0400 (EDT)
+[debug] [2018-06-06T22:20:23.221Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-06T22:20:23.223Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/thalmic-challenge/tokens  
+  
+ Wed Jun 06 2018 18:20:23 GMT-0400 (EDT)
+[debug] [2018-06-06T22:20:23.503Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-06T22:20:23.505Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thalmic-challenge  
+  
+ Wed Jun 06 2018 18:20:23 GMT-0400 (EDT)
+[debug] [2018-06-06T22:20:23.964Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Karim/Documents/thalmic-challenge'...
+[info] 
+[debug] [2018-06-06T22:20:23.968Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1006129285518/clients/_:getWebAppConfig  
+  
+ Wed Jun 06 2018 18:20:23 GMT-0400 (EDT)
+[debug] [2018-06-06T22:20:24.239Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

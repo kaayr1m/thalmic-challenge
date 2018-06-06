@@ -1,31 +1,39 @@
-var ball   = document.querySelector('.ball');
-var garden = document.querySelector('.garden');
-var output = document.querySelector('.output');
+document.addEventListener('DOMContentLoaded', function () {
+  var ball = document.querySelector('.ball');
+  var zone = document.querySelector('.zone-2');
+  // var output = document.querySelector('.output');
 
-var maxX = garden.clientWidth  - ball.clientWidth;
-var maxY = garden.clientHeight - ball.clientHeight;
+  var maxX = zone.clientWidth - ball.clientWidth;
+  var maxY = zone.clientHeight - ball.clientHeight;
 
-function handleOrientation(event) {
-  var x = event.beta;  // In degree in the range [-180,180]
-  var y = event.gamma; // In degree in the range [-90,90]
+  function handleOrientation(event) {
+    var scale = 3;
 
-  output.innerHTML  = "beta : " + x + "\n";
-  output.innerHTML += "gamma: " + y + "\n";
+    var x = event.beta * scale; // In degree in the range [-180,180]
+    var y = event.gamma * scale; // In degree in the range [-90,90]
 
-  // Because we don't want to have the device upside down
-  // We constrain the x value to the range [-90,90]
-  if (x >  90) { x =  90};
-  if (x < -90) { x = -90};
+    // output.innerHTML  = "beta : " + x + "\n";
+    // output.innerHTML += "gamma: " + y + "\n";
 
-  // To make computation easier we shift the range of 
-  // x and y to [0,180]
-  x += 90;
-  y += 90;
+    // Because we don't want to have the device upside down
+    // We constrain the x value to the range [-90,90]
+    if (x > 90) {
+      x = 90;
+    }
+    if (x < -90) {
+      x = -90;
+    }
 
-  // 10 is half the size of the ball
-  // It center the positioning point to the center of the ball
-  ball.style.top  = (maxX*x/180 - 10) + "px";
-  ball.style.left = (maxY*y/180 - 10) + "px";
-}
+    // To make computation easier we shift the range of 
+    // x and y to [0,180]
+    x += 90;
+    y += 90;
 
-window.addEventListener('deviceorientation', handleOrientation);
+    // 10 is half the size of the ball
+    // It center the positioning point to the center of the ball
+    ball.style.top = (maxX * x / 180 - 30) + "px";
+    ball.style.left = (maxY * y / 180 - 30) + "px";
+  }
+
+  window.addEventListener('deviceorientation', handleOrientation);
+});

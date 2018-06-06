@@ -1,17 +1,48 @@
-.garden {
+.zone-4 {
   position: relative;
-  width : 200px;
-  height: 200px;
-  border: 5px solid #CCC;
-  border-radius: 10px;
+  margin: 0 auto;
+  width : 350px;
+  height: 350px;
+  border: 2px solid #CCC;
+  background-color: #B3DEFF;
+}
+
+.zone-2 {
+  position: relative;
+  margin: 0 auto;
+  width : 350px;
+  height: 350px;
+  border: 2px solid #CCC;
+  border-radius: 175px;
+  background-color: #B3DEFF;
+}
+
+.zone-2:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 1px solid black;
+  background: black;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.zone-nuetral {
+  position: relative;
+  margin: 10% auto;
+  width : 80%;
+  height: 80%;
+  border-radius: inherit;
+  background-color: #D9EEFF;
 }
 
 .ball {
   position: absolute;
-  top   : 90px;
-  left  : 90px;
+  top   : 45%;
+  left  : 45%;
   width : 20px;
   height: 20px;
-  background: green;
+  background: red;
   border-radius: 100%;
 }
