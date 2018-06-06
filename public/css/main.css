@@ -22,10 +22,11 @@
   position: absolute;
   top: 50%;
   left: 0;
-  border-top: 1px solid black;
-  background: black;
   width: 100%;
+  border-top: 2px solid #CCC;
+  background: #CCC;
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 .zone-nuetral {
@@ -45,4 +46,5 @@
   height: 20px;
   background: red;
   border-radius: 100%;
+  z-index: 2;
 }
