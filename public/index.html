@@ -8,17 +8,6 @@
 
     <link href="./css/main.css" rel="stylesheet"></link>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.0.4/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.0.4/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.0.4/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.0.4/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.0.4/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-    <script defer src="./js/main.js"></script>
-
     <style media="screen">
         body {
             background: #ECEFF1;
@@ -32,7 +21,7 @@
             background: white;
             max-width: 360px;
             margin: 100px auto 16px;
-            padding: 32px 24px;
+            padding: 10px;
             border-radius: 3px;
         }
         
@@ -43,17 +32,10 @@
             margin: 0 0 8px;
         }
         
-        #message h1 {
-            font-size: 22px;
-            font-weight: 300;
-            color: rgba(0, 0, 0, 0.6);
-            margin: 0 0 16px;
-        }
-        
         #message p {
             line-height: 140%;
             margin: 16px 0 24px;
-            font-size: 14px;
+            font-size: 10px;
         }
         
         #message a {
@@ -94,30 +76,30 @@
 <body>
     <div id="message">
         <h2>Tilt Menu Challenge</h2>
-        <a href="#">New Study</a>
+        <a href="#" onclick="newStudy4Zones()">4Zone Study</a>
+        <a href="#" onclick="newStudy2Zones()">2Zone Study</a>
     </div>
 
 
-    <div class="zone-2">
+    <div id="zone" class="zone-2">
         <canvas class="zone-nuetral">
         </canvas>
         <div class="ball"></div>
     </div>
 
-    <!-- <pre class="output"></pre> -->
-    <!-- <pre id="load"></pre> 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            try {
-                let app = firebase.app();
-                let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-                document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-            } catch (e) {
-                console.error(e);
-                document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-            }
-        });
-    </script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.0.4/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.0.4/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.0.4/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.0.4/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.0.4/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="./js/main.js"></script>
 </body>
 
 </html>

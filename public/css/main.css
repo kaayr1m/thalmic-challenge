@@ -7,18 +7,7 @@
   background-color: #B3DEFF;
 }
 
-.zone-4:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  border-top: 2px solid #CCC;
-  background: #CCC;
-  transform: translateY(-50%) rotate(-45deg);
-  z-index: 1;
-}
-
-.zone-4:after {
+.zone-4::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -26,6 +15,17 @@
   border-top: 2px solid #CCC;
   background: #CCC;
   transform: translateY(-50%) rotate(45deg);
+  z-index: 1;
+}
+
+.zone-4::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-top: 2px solid #CCC;
+  background: #CCC;
+  transform: translateY(-50%) rotate(-45deg);
   z-index: 1;
 }
 
@@ -39,7 +39,7 @@
   background-color: #B3DEFF;
 }
 
-.zone-2:before {
+.zone-2::before {
   content: '';
   position: absolute;
   top: 50%;
