@@ -202,7 +202,8 @@ var c = document.querySelector(".zone-nuetral");
   }
 
 function markFailedAttempt() {
-  analytics.markFail(level.shift());
+  analytics.markFail(level.pop());
+  console.log(level);
   drawMenu();
 }
 

@@ -7,6 +7,12 @@ I kept track of the time it took me to create this prototype and it was less tha
 This study was designed to work with a screen size of the iphone 8.
 Run it on other devices to see if the UI is suitble.
 
+## Deploying
+
+- Since it is power by web, it is alredy deployed, hosted by firebase.
+- Visit https://thalmic-challenge.firebaseapp.com/ to use the tilt menu study application
+- You can also run this application locally by executing `firebase serve` while in the base directory.
+
 ## Conducting Study
 
 - Lay phone flat making sure the indicator dot is red and select the zones you want to study
