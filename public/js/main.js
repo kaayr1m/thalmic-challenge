@@ -111,6 +111,9 @@ var analytics = {
 
     this._prevTime = new Date();
   },
+  markFail: function(L) {
+    this._study["WrongOption" + L] = true;
+  },
   mark: function (toLevel) {
     if (this._complete || !this._started) return;
 
@@ -197,6 +200,11 @@ var c = document.querySelector(".zone-nuetral");
       }
     }
   }
+
+function markFailedAttempt() {
+  analytics.markFail(level.shift());
+  drawMenu();
+}
 
 function newStudy2Zones() {
   document.getElementById("zone").className = "zone-2";
