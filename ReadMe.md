@@ -23,11 +23,11 @@ Note: * is the final destination
 - When they complete the study, they will see a prompt.
 ![Car Image](images/IMG_1126.jpg)
 - When user selects the wrng option, click "*MARK FAILED ATTEMPT"* and this will kick tem back one menu level and they can continue. This failed attempet will be reflected in the study recorded data in the end.
-![Car Image](images/MarkFail.png)
+![Car Image](images/IMG_1127.jpg)
 
 ## Download Study Data [JSON]
 
-- Go to eht following link on the browser to get all completed study data. https://thalmic-challenge.firebaseio.com/studies.json?auth=NuViTOynUgUomK6LruUieqiJkecZQ0STCiqspNnw
+- Go to the following link on the browser to get all completed study data. https://thalmic-challenge.firebaseio.com/studies.json?auth=NuViTOynUgUomK6LruUieqiJkecZQ0STCiqspNnw
 
 Example:
 ```
