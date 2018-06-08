@@ -1,3 +1,7 @@
+# Tilt Menu [Thalmic Labs Challenge]
+
+I kept track of the time it took me to create this prototype and it was less than 12 hours split between 3 days. I used Javascript for this application to develop it fast on web by eliminating compile time and any other setup required. It is fast to make changes and can run on many devices. It has been  very interesting challenge.
+
 ## Requirement
 
 This study was designed to work with a screen size of the iphone 8.
@@ -18,6 +22,8 @@ Note: * is the final destination
 ![Car Image](images/IMG_1124.jpg)
 - When they complete the study, they will see a prompt.
 ![Car Image](images/IMG_1126.jpg)
+- When user selects the wrng option, click "*MARK FAILED ATTEMPT"* and this will kick tem back one menu level and they can continue. This failed attempet will be reflected in the study recorded data in the end.
+![Car Image](images/MarkFail.png)
 
 ## Download Study Data [JSON]
 
